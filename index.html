@@ -13,6 +13,24 @@
     </head>
 
     <body>
+        
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#" class="active">Anubhav Verma</a>
+                <div id="myLinks">
+                    <a href="#about"><b>ABOUT</b></a>
+                    <a href="#education"><b>EDUCATION</b></a>
+                    <a href="#projects"><b>PROJECTS</b></a>
+                    <a href="#skills"><b>SKILLS</b></a>
+                    <a href="#certifications"><b>CERTIFICATIONS</b></a>
+                    <a href="#achievements"><b>ACHIEVEMENTS</b></a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
         <div class="sideNav">
             <div class="nav-center">
                 <img src="assets/img/image.jpg" alt="Avatar">
@@ -224,5 +242,16 @@
             </section>
             <hr>
         </div>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
     </body>
 </html>
